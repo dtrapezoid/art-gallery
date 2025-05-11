@@ -1,0 +1,89 @@
+/* Reset some default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background: #faf9f6;
+  color: #222;
+  line-height: 1.7;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  padding: 2rem 0 1rem 0;
+  text-align: center;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+nav a {
+  color: #222;
+  text-decoration: none;
+  margin: 0 1.2rem;
+  font-size: 1.1rem;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #888;
+}
+
+.intro {
+  text-align: center;
+  margin: 3rem 0 2rem 0;
+}
+
+.intro h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 0.7rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto 3rem auto;
+  padding: 0 1rem;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.05);
+  background: #eaeaea;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.gallery img:hover {
+  transform: scale(1.025);
+  box-shadow: 0 4px 32px rgba(0,0,0,0.08);
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 0 1rem 0;
+  font-size: 1rem;
+  color: #888;
+  background: #fff;
+  border-top: 1px solid #eee;
+  margin-top: auto;
+}
